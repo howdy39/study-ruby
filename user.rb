@@ -16,3 +16,7 @@ class User2
   #attr_reader :name
   #attr_writer :name
 end
+
+class User3
+  attr_accessor :name, :address, :email
+end
