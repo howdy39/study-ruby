@@ -19,4 +19,12 @@ end
 
 class User3
   attr_accessor :name, :address, :email
+
+  def profile
+    "#{name}/#{@name}/#{address}/#{email}"
+  end
+
+  def name
+    'hogehoge' # ゲッターだけ上書きとかも併用できる
+  end
 end
