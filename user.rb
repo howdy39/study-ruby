@@ -38,3 +38,14 @@ class User4
     @email = email
   end
 end
+
+# デフォルト値とキーワード引数
+# user = User5.new(name: 'howyd39', email: 'howdy39@gmail.com')
+class User5
+  attr_reader :name, :address, :email # これがないと user.name で呼べない
+  def initialize(name: ,address: 'default address', email:)
+    @name = name
+    @address = address
+    @email = email
+  end
+end
