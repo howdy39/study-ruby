@@ -28,3 +28,13 @@ class User3
     'hogehoge' # ゲッターだけ上書きとかも併用できる
   end
 end
+
+# user = User4.new(1, 2, 3)
+class User4
+  attr_reader :name, :address, :email # これがないと user.name で呼べない
+  def initialize(name ,address, email)
+    @name = name
+    @address = address
+    @email = email
+  end
+end
